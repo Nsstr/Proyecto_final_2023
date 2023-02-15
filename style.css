@@ -1,0 +1,321 @@
+* {font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    margin:0;
+    padding:0;
+    background-color: rgb(255, 255, 255);
+    color: white;
+
+}
+
+.banner{
+  background: linear-gradient(to right, rgb(10, 10, 10), rgb(32, 32, 32));
+  color: rgb(255, 255, 255);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.nom{
+  padding-top: 2.5vh;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+
+section {
+    display: flex;
+    width: auto;
+    height: 50vh;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .7s ease;
+
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.dg {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  .dg{
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+    margin-top: 0;
+    padding: 2vh 0 2vh 0;
+    color: rgb(32, 32, 32);
+    letter-spacing: 5px;
+  }
+
+  .unm{
+    color: black;
+    text-align: center;
+    margin: 0;
+    margin-top: 0;
+    padding: 0 0 0 0;
+    color: rgb(32, 32, 32);
+    letter-spacing: 5px;
+  }
+
+  .intro{
+    padding: 5vh 5% 5vh 5%;
+    margin: 0%;
+    text-align: center;
+    color: rgb(27, 27, 27);
+  }
+
+  .intro{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 0 auto;
+    margin: 5% 10% 5% 10%;
+    /**comienzo de degradado en cuadro*/
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom, #46d5da 0%, #3a4ed5 100%);
+    border-image-slice: 1;
+  }
+
+  .imagen{
+    width: 100%;
+  }
+
+
+  /**.cuadro{
+    display: flex;
+    overflow: hidden;
+    width: 0 auto;
+    height: 0 auto;
+    margin: 20px;
+    margin-top: 10vh;
+  }
+
+  .cuadro_in{
+    width: 100vh;
+    height: auto;
+    /**background-color: rgb(255, 255, 255);*/
+    /**background: linear-gradient(rgb(148, 93, 236), rgb(255, 255, 255));
+
+    margin: 5px;
+    border-radius: 10px;
+    color: rgb(49, 49, 49);
+    padding: 1%;
+  }
+
+  .texto{
+    padding: 1vh 0 0 0;
+    margin: 0%;
+    text-align: center;
+    font-size: medium;
+    color: white;
+
+  }
+
+.cuerpotxt{
+    margin: 0%;
+    font-size: small;
+    text-align: center;
+    padding: 1vh 0 2vh 0;
+}*/
+  
+.m3{
+  margin: 0;
+
+}
+.m1{
+  display: flex;
+  background-color: #510dbe;
+  width: 80%;
+  padding: 30px;
+  height: auto;
+  border-radius: 0 25px 25px 0;
+  background-image: url(img/programacion3.jpeg);
+  text-shadow: 3px 1px 10px rgb(9, 4, 17) ;
+}
+
+.m2{
+  float: right;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin: 0 150px ;
+  margin-top: -35vh;
+  height: 30vh;
+  
+}
+
+.contenedor{
+  width: 100%;
+  height: auto;
+
+  
+}
+
+.tex2{
+  background-color: #3a4ed5;
+  padding: 30px;
+  border-radius: 25px 0 0 25px;
+  background-image: url(img/marketing3.jpeg);
+  text-shadow: 3px 1px 10px rgb(9, 4, 17) ;
+ 
+}
+
+.cont2{
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  float: right;
+
+}
+
+
+.contenedor2{
+  padding: 25px;
+  width: 100%;
+  height: auto;
+
+  
+}
+
+.cont3{
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+
+}
+.tex3{
+  background-color: #3a4ed5;
+  padding: 30px;
+  border-radius: 0 25px 25px 0;
+  background-image: url(img/programacion2.jpeg);
+  text-shadow: 3px 1px 10px rgb(9, 4, 17) ;
+ 
+}
+
+
+.cap{
+  width: 100px;
+}
+
+
+.cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+  
+  
+}
+
+.card{
+  height: auto;
+  background-color: #034caa;
+  flex: 1 0 30vh;
+  padding: 3vh;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  vertical-align: middle;
+  border-radius: 25px 0 25px 0;
+  margin: 5px;
+  
+  
+}
+
+
+/**formulario*/
+
+
+
+div {
+  margin: 0 auto;
+}
+
+.formulario{
+  width: 300px;
+  height: 40px;
+
+}
+
+
+div input{
+  width: 300px; 
+  height: 40px; 
+  border-radius: 15px 0 15px 0;
+}
+
+
+
+button{
+  height: 45px;   
+
+  width: 300px;   
+  cursor: pointer;
+}
+
+
+h1{
+  color: #000000;
+}
+
+.comentario{
+  height: 10px auto;
+}
+
+.piedepag{
+  margin-top: 55vh;
+  width: 0 auto;
+  height: 190px;
+  background-color: #510dbe;
+}
+
+div .infopie{
+  font-size: smaller;
+  padding: 1vh 0 0 10vh ;
+}
+
+div img{
+  display: flex;
+  float: right;
+  width: 9%;
+  margin-top: -7vh;
+}
